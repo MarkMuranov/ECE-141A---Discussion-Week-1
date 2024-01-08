@@ -5,7 +5,7 @@
 int main()
 {
     // Open input text (adjust path if needed)
-    std::ifstream file("../input.txt");
+    std::ifstream file("input.txt");
     if (!file.is_open())
     {
         std::cerr << "File not open!" << std::endl;
