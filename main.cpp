@@ -12,13 +12,18 @@ int main()
         return 1;
     }
 
-    // Read text
+    const std::string digits = "0123456789";
+    int sum = 0;
+
     std::string line;
     while (std::getline(file, line))
     {
-        // Process each line of text here...
-        std::cout << "Line: '" << line << "'\n";
+        const char firstDigit = line[line.find_first_of(digits)];
+        const char lastDigit  = line[line.find_last_of (digits)];
+        sum += (int)(firstDigit - '0') * 10;
+        sum += (int)(lastDigit  - '0');
     }
 
+    std::cout << "Sum: " << sum << std::endl;
     return 0;
 }
