@@ -1,4 +1,11 @@
-**/Builds
+Builds/
+Build/
+builds/
+build/
+tmp/
+zlib/
 **/.DS_Store
-cmake-build-*
-.idea
+cmake-build-*/
+out/
+.idea/
+.vs/
